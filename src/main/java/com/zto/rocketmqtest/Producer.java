@@ -21,7 +21,8 @@ public class Producer {
 
 		final DefaultMQProducer producer = new DefaultMQProducer(
 				"ProducerGroupName");
-		producer.setNamesrvAddr("110.110.119.14:9876");
+		//10.10.19.14必须为本机的IP地址，并且端口号为9876
+		producer.setNamesrvAddr("10.10.19.14:9876");
 		producer.setInstanceName("Producer");
 
 		/**
